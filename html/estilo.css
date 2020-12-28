@@ -1,0 +1,91 @@
+header{
+	color:darkblue;
+	background-color:concret;
+}
+#alerta
+{
+	color:red;
+}
+
+#bien
+{
+	color:#1EDFD1;
+}
+
+body{
+	background-color:whitesmoke;
+}
+
+#sub
+{
+	font-size:x-large
+}
+
+#sub1
+{
+	font-size:xx-large
+}
+
+.parpadea {
+  
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+
+#status {
+   width: 80%;
+   border: 1px solid #000;
+   caption-side:bottom;
+}
+th, td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-collapse: collapse;
+   padding: 0.3em;
+}
+th{
+	background:#c6cece;
+}
+
+#log{
+   width: 50%;
+   border: 1px solid #000;
+   caption-side:bottom;
+}
+caption {
+   padding: 0.3em;
+}
+
+section{
+	display:grid;
+	grid-template-columns: 2fr 2fr;
+}
+
