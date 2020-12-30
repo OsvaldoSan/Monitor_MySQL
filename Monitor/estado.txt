@@ -1,0 +1,12 @@
+Aborted_clients
+Threads_connected
+Created_tmp_disk_tables
+Handler_read_first
+Innodb_buffer_pool_wait_free
+Key_reads
+Max_used_connections
+Open_tables
+Select_full_join
+Slow_queries
+Uptime
+Queries
