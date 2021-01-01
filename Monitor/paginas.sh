@@ -64,10 +64,10 @@ echo "<pre>" >> /var/www/html/query100.html
 	tail -100 /var/run/mariadb/mariadb_query.log >> /var/www/html/query100.html
 echo "</pre>" >> /var/www/html/query100.html
 
-# Últimas 300 sin contemolar procesos automáticos
-
+# Últimas 100 sin contemolar procesos automáticos
+# Aunque el html diga 300, son solo 100
 echo "<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"> <title>Monitor MySQL Premier Consultas</title></head>" > /var/www/html/query300.html
-echo "<header><h2> Últimas 300 consultas sin contemplar los procesos automáticos</h2></header>" >> /var/www/html/query300.html
+echo "<header><h2> Últimas 100 consultas sin contemplar los procesos automáticos</h2></header>" >> /var/www/html/query300.html
 	date >> /var/www/html/query300.html
 echo "<pre>" >> /var/www/html/query300.html
 	cat /var/run/mariadb/mariadb_query.log | grep -v root@localhost | grep -v GLOBAL | grep -v 'show processlist' | grep -v Quit | tail -100>> /var/www/html/query300.html

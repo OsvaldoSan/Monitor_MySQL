@@ -1,6 +1,6 @@
 #!/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
-monitor="~/Administración/MySQL_AdminPremier/Monitor/"
+monitor="/root/Administración/MySQL_AdminPremier/Monitor"
 export PATH
 
 # Este va a ultimo, pues ultimo.html es el último registro tomado antes de morir
@@ -13,7 +13,7 @@ echo "<tr>" >> /var/www/html/ultimo.html
 echo "</tr>" >> /var/www/html/ultimo.html
         for i in {1..12}
         do
-        	variable=$(awk "NR==$i" ~/Administración/estado.txt)
+        	variable=$(awk "NR==$i" $monitor/estado.txt)
                 echo "<tr>" >> /var/www/html/ultimo.html
                         echo "<td>" >> /var/www/html/ultimo.html
                                 echo $variable >> /var/www/html/ultimo.html

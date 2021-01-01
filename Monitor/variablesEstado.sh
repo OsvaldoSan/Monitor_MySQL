@@ -1,6 +1,6 @@
 #!/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
-monitor="~/Administración/MySQL_AdminPremier/Monitor/"
+monitor="/root/Administración/MySQL_AdminPremier/Monitor"
 export PATH
 
 # Muestra algunas variables de estado de mariadb en una tabla estatica de html

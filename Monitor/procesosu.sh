@@ -2,7 +2,7 @@
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
 export PATH
 #Es el mismo codigo pero este se mandara a la pagina ultimo.html
-monitor="~/Administración/MySQL_AdminPremier/Monitor/"
+monitor="/root/Administración/MySQL_AdminPremier/Monitor"
 
 	mysqladmin processlist > $monitor/temp/archi
 	filas=$(wc -l $monitor/temp/archi | cut -d '/' -f 1)

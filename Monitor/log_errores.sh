@@ -2,7 +2,7 @@
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
 export PATH
 # Este script se usa en el principal monitor.sh
-monitor="~/Administración/MySQL_AdminPremier/Monitor/"
+monitor="/root/Administración/MySQL_AdminPremier/Monitor"
 #tail -15 /var/log/mysqld.log > ~/Administración/temp/archi
 #Versión CentOS 7, en mariadb.log estan los eventos del servidor de base de datos que se puden considerar errores, tales como
 #el encendido o apagado

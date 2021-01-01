@@ -2,7 +2,7 @@
 #Este script se usa en el principal monitor.sh
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
 export PATH
-monitor="~/Administración/MySQL_AdminPremier/Monitor/"
+monitor="/root/Administración/MySQL_AdminPremier/Monitor"
 
 # Muestra la lista de procesos de mariadb en forma de tabla estatica de html
 # El usuario, de donde viene y el comando que utilizo, entre otros datos

@@ -3,7 +3,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
 export PATH
 # Datos generales del sistema presentados en tabla estatica de html
 
-monitor="~/Administración/MySQL_AdminPremier/Monitor/"
+monitor="/root/Administración/MySQL_AdminPremier/Monitor"
 
 free -m > $monitor/temp/archi #Era mo antes
 #vmstat -S m | tr '-' ' ' > ~/Administración/temp/archi
