@@ -1,4 +1,4 @@
 # Bases de datos a respaldar
 #--all-databases
-Respaldo_Total
+#Respaldo_Total
 world
