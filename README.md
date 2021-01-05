@@ -6,6 +6,8 @@ servicios web permitidos http con `firewall-cmd --permanent --add-service=http` 
 Se requiere que se activen unas banderas en Mariadb para que ejecute el historial de queries.
 - `SET GLOBAL general_log_file="/var/run/mariadb/mariadb_query.log" `
 - `SET GLOBAL general_log="ON"`
+
+O bien activarlas directamente en el archivo de configuración */etc/my.cnf* (asegurese de tener un respaldo).
 Activando esas dos variables se podra acceder al historial de consultas.
 
 ## Ejecución de Monitor como cron job
